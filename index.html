@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html long="en">
+    <head>
+        <title>
+            Projekt HTML - CSS!
+        </title>
+        <!-- Załączenie pliku .css -->
+         <link rel="stylesheet"  href="style.css">
+        <!-- Załączenie pliku .js -->
+         <script src="java.js">
+         </script>
+    </head>
+    <body>
+        <!-- Wstawianie obrazka na stronie-->
+        <img src="las.jpg" alt="Picture of forest"><br>
+        <!-- Wstawianie linka do strony interenwtowej-->
+        Visit <a href="https://www.lasy.gov.pl/pl">Polskie Lasy</a>
+        <!-- Zawartośc strony-->
+        <h1>Hello, world!</h1>
+        <h2> This is my 1. subsection</h2>
+        <p> This is paragraf 1</p>
+        <h2> This is my 2. subsection</h2>
+        <h3 class="k1"> This is my h3 subsection</h3>
+        <h4 class="k1 k2"> This is my h4 subsection</h4>
+        <h5 class="k2"> This is my h5 subsection</h5>
+        <h6> This is my h6 subsection</h6>
+        <!-- Tabela-->
+        <table>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            <tr>
+                <td>cell 1</td>
+                <td>cell 2</td>
+                <td>cell 3</td>
+            </tr>
+            <tr>
+                <td>cell 4</td>
+                <td>cell 5</td>
+                <td>cell 6</td>
+            </tr>
+            <tr>
+                <td>cell 7</td>
+                <td>cell 8</td>
+                <td>cell 9</td>
+            </tr>
+        </table><br>
+        <!-- Akcja: wpisz tekst, który ma być wyszukany w Google-->
+        <form action="https://www.google.com/search" method="get">
+            <input name="q" type="text">
+            <input type="submit" value="Search on Google">
+        </form><br><br>
+        <!-- JavaScript - wysakujące okienko z napisem -->
+        <form onsubmit="greet(); return false;">
+            <input type="text" id="imie">
+            <input type="submit" value="KLIK">
+        </form>
+        <!-- JavaScript - aktualizacja pola HTML-->
+        <div id="result">
+            Hello!
+        </div><br><br>
+        <!-- JavaScript - zmniejszanie i zwiększanie przez klikanie wartości na stronie-->
+        <form onsubmit="increment(); return false;">
+            <input type="submit" value="Dodaj 1!">
+        </form>
+        <form onsubmit="discrement(); return false;">
+            <input type="submit" value="Odejmij 1!">
+        </form>
+        <div id="count">
+            0
+        </div><br><br>
+        <!-- JavaScript - zmiana wielkości tekstu paragrafu <p> -->
+        <p id="p"> Zmieniam wielkość czcionki tekstu na: </p>
+        <select id="select" onChange = "font_size();">
+            <option value="large">Large Text</option>
+            <option value="initial" selected>Medium Text</option>
+            <option value="small">Small Text</option>
+        </select><br><br>
+        <!-- JavaScript - miganie tekstu -->
+        <div id="div1">
+            Hello, world!
+        </div><br><br>
+        <div id="div2">
+            <form onsubmit="geolokalizacja(); return false;">
+            <input type="submit" value="Zobacz swoją loklizację">
+        </form>
+        </div>
+        <br><br>
+        <!-- wywołanie strony http: http-server -->
+    </body>
+</html>
+

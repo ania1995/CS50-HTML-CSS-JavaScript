@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html long="en">
+    <head>
+        <title>
+            Dynamiczna zmiana tła!
+        </title>
+    </head>
+    <body>
+        <button id="red">R</button>
+        <button id="green">G</button>
+        <button id="blue">B</button>
+         <script>
+            let body = document.querySelector('body');
+            document.querySelector('#red').onclick = function(){
+                body.style.backgroundColor = 'lightCoral';
+            }
+            document.querySelector('#green').onclick = function(){
+                body.style.backgroundColor = 'lightGreen';
+            }
+            document.querySelector('#blue').onclick = function(){
+                body.style.backgroundColor = 'lightCyan';
+            }
+         </script>
+    </body>
+</html>
